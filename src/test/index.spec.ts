@@ -3,14 +3,7 @@ import { beforeEach, describe, it } from 'mocha';
 import * as indexExports from '../index';
 
 describe("index.ts module", () => {
-    // it("should have a Person export (type or interface)", () => {
-    //   expect((indexExports as any).Person).to.eq(undefined);
-    //   const x: indexExports.Person = {} as any;
-    // });
-    // it("should have a Address export (type or interface)", () => {
-    //   expect((indexExports as any).Address).to.eq(undefined);
-    //   const x: indexExports.Address = {} as any;
-    // });
+    
     it("should have a AddressBook export (class)", () => {
         expect(!!indexExports.AddressBook).to.eq(true, "export exists");
         expect(typeof indexExports.AddressBook).to.eq("function", "export exists");
@@ -25,8 +18,6 @@ describe("index.ts module", () => {
             "it is a function"
         );
         expect(indexExports.getVcardText.prototype).to.deep.eq({});
-
-        // expect(indexExports.getVcardText.prototype.name).to.eq("function");
     });
 });
 

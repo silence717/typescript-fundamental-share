@@ -3,9 +3,10 @@
         "types": ["node"],
         "module": "commonjs",
         "target": "es2017",
-        "noImplicitAny": false,
-        "strict": false,
+        "noImplicitAny": true,
         "allowJs": true,
+        "strict": true,
+        "strictNullChecks": true,
         "checkJs": true
     },
     "include": ["src"],
